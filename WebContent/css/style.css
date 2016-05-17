@@ -1,0 +1,203 @@
+@CHARSET "UTF-8";
+
+.hidden{
+	display:none;
+}
+	#main-menu{
+	font:1em;
+	}
+
+.button{
+	display:inline-block;
+	border:none;
+	border-left:1px solid #BCBA34;
+	text-indent:-999px;
+	vertical-align:middle;
+	overflow:hidden;
+}
+
+/*-------------------------main-menu style-------------------*/
+#main-menu{
+	display: inline-block;
+	position: absolute;
+	left:200px;
+	top:27px;
+	border: 1px solid red;
+}
+#main-menu > ul{
+
+/* 	border:5px solid red; */
+	overflow:auto;
+/* 	display:inline-block; */
+/* 	display:inline-block;
+	padding-left : 24px;
+	background:url(#ff6a00 "../images/bg-main-menu-vsp.png") 13px no-repeat center;
+ */
+}
+#main-menu>ul>li
+{
+	float:left;
+	padding-left : 24px;
+	background:url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
+	color:#ff6a00;
+
+}
+
+#main-menu>ul>li:first-child{
+	padding-left:0px;
+	background:none;
+}
+#main-menu>ul>li>a{
+	font-family:"맑은 고딕","고딕",sans-serif;
+	font-weight:bold;
+	color:#000;
+	font-size:15px;
+	
+	text-decoration:none;
+}
+
+#main-menu>ul>li>a:hover{
+	color:#ff6a00;
+}
+
+/*-----------------member-menu------------------*/
+
+
+#member-menu{
+	
+		display:inline-block;
+		position:absolute;
+		top:21px;
+		right:0px;
+		
+}
+#member-menu>ul>li{
+
+	padding-left:9px;
+ 	background:url("../images/bg-joinus-menu-vsp.png") no-repeat 9px center;
+	float:left;
+	}
+	
+#member-menu>ul>li>a{
+	font-family:"맑은 고딕";
+	font-weight: bold;
+	color:#979797;
+	text-decoration:none;
+	font-size: 10px;
+}	
+
+#member-menu>ul>li:fist-child{
+	padding-left:0px;
+	background:none;
+}
+
+/*--------------------aside-menu-------------*/
+#aside-menu>ul>li{
+	background:url("../images/bg-aside-menu-hsp.png") no-repeat bottom;
+	height:26px;
+}
+
+#aside-menu>ul>li>a{
+	font-family="고딕";
+	font-weight: bold;
+	color:#808080;
+	padding-left:26px;
+	text-decoration:none;
+	font-size: 12px;
+	
+}
+
+#aside-menu>ul>li>a:hover{
+	background:url("../images/icon-current.png") no-repeat 9px center;
+}
+
+/*-------------------------#lecture-search style-------------------*/
+
+#lecture-search{
+	width:308px;
+	height:25px;
+	border: 5px solid #8CBA34;
+	display:inline-block;
+	position:absolute;
+	left:468px;
+	top:21px;
+}
+
+#lecture-search fieldset{
+	font-size:0px;
+}
+
+#lecture-search fieldset label{
+	display:inline-block;
+	font-size:11px;
+	font-weight:bold;
+	width:55px;
+	height:25px;
+	line-height:25px;
+	vertical-align:middle;
+	text-align:center;
+}
+	#lecture-search fieldset input[type="text"]{
+	height:25px;
+	width:calc(100% - 86px);
+	border:none;
+	vertical-align:middle;
+	/* border-left:1px solid #BCBA34; */
+	/* line-height:25px; */
+	font-size:16px;
+	text-indent:5px;
+	
+	}
+	#lecture-search fieldset>input[type="submit"]{
+	
+	background:url("../images/btn-zoom.png") no-repeat center;
+	width:31px;
+	height:25px;	
+	/* border:none;
+	border-left:1px solid #BCBA34;
+	text-indent:-999px;
+	vertical-align:middle; */
+	
+	}
+	
+	/*------------------#customer-menu style--------------------------------*/
+	
+	#customer-menu{
+		display:inline-block;
+		border: 1px solid red;
+		position:absolute;
+		right:0px;
+		top:40px;
+	}
+	
+/* 	#customer-menu ul{
+	display:inline-block;
+	} */
+	
+	#customer-menu li{
+	float:left;
+	}
+	
+	#customer-menu li:first-child a{
+
+	background:url("../images/txt-mypage.png") no-repeat center;
+	width:72px;
+	height:17px;
+	}
+
+/* 	#customer-menu li:nth-child(2) a
+	#customer-menu li:first-child+li a */
+	
+	#customer-menu li:last-child a {
+	background: url("../images/txt-customer.png") no-repeat center;
+	width: 72px;
+	height: 17px;
+	}
+	
+	/*--------------------------------logo-------------*/
+	#logo
+	{
+	display : inline-block;
+	position : absolute;
+	top:23px;
+	left:0;}

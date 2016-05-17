@@ -1,0 +1,13 @@
+select *from (select *from notice order by REGDATE desc) where rownum between 1 and 10;
+
+select *from notice where code=3;
+
+INSERT INTO NOTICE(CODE, TITLE, WRITER, CONTENT, REGDATE, HIT) VALUES(?, 'A', 'newlec', 'c', TIMESTAMP, 0);
+
+SELECT NVL_MAX(TO_NUMBER(CODE+1)) AS CODE FROM NOTICE;
+
+CREATE VIEW NOTICE_VIEW;
+
+SELECT *FROM NOTICE_VIEW WHERE ROWNUM BETWEEN 11 AND 20;
+
+SELECT * FROM NOTICE_VIEW WHERE title LIKE '%%' AND NUM BETWEEN 1 AND 10
